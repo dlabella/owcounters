@@ -5,11 +5,13 @@
         {name:"Support"}
     ];
     var heroes = [
-        { name: "Dva", role: "Tank", counters: [] },
-        { name: "Reinhardt", role: "Tank", counters: [] },
-        { name: "Moira", role: "Support", counters: [] },
-        { name: "Kiriko", role: "Support", counters: [] },
-    ]
+        { name: "Dva", role: "Tank", counters: [],image:"" },
+        { name: "Reinhardt", role: "Tank", counters: [],image:"" },
+        { name: "Moira", role: "Support", counters: [],image:"" },
+        { name: "Kiriko", role: "Support", counters: [],image:"" },
+    ];
+    loadHeroIcons(heroes);
+
     document.addEventListener("DOMContentLoaded", init);
     var self = this;
     self.gridContainer = {};
@@ -24,6 +26,11 @@
             buildRoleGrid(role)
         });
     };
+    function loadHeroIcons(heroes){
+        for(var hero of heroes){
+            hero.image = "/images/ow2/hero-"+hero.name.toLocaleLowerCase()+".png";
+        }
+    }
 
     function buildRoleGrid(role) {
         

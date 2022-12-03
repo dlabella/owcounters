@@ -13,3 +13,19 @@ a {
   display: flex;
   flex-direction: row;
 }
+.hero img{
+  width: 80px;
+  height: 80px;
+}
+.hero{
+  margin-right: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hero.selected{
+  border: 2px solid orange;
+}
+.hero.disabled{
+  opacity: 0.3;
+  pointer-events: none;
+}
