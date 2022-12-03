@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/materialize.min.css">
+  <script src="/javascripts/materialize.min.js" defer></script>
+</head>
+
+<body class="container">
+  <h1>Express</h1>
+  <div id="hero-grid-container" class="row hero-grid-container">
+  </div>
+</body>
+
+<template id="hero-grid-template">
+  <div class="col s4 role-grid">
+    <div class="row">
+      <label class="col s12">{{name}}</label>
+      <div class="col s12 hero-grid">
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="hero-template">
+  <div class="hero">
+    {{name}}
+  </div>
+</template>
+<footer>
+  <script src="/javascripts/app.js" defer></script>
+</footer>
+</html>
