@@ -25,6 +25,11 @@ a {
   border-radius: 8px;
   overflow: hidden;
   flex: 0 1 auto;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.hero:hover{
+  border: 2px solid lightgreen;
 }
 .hero.selected{
   border: 2px solid orange;
@@ -41,7 +46,7 @@ a {
 .role-grid{
   flex-grow: 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   display: flex;
 }
