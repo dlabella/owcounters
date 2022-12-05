@@ -1,8 +1,8 @@
-@font-face {
+/* @font-face {
     font-family: "Koverwatch";
     src: url("/fonts/overwatch.woff2") format("woff2"),
         /* chrome firefox */ url("/fonts/overwatch.ttf") format("truetype"); /* chrome firefox opera Safari, Android, iOS 4.2+*/
-}
+} */
 
 body {
     font-family: "Koverwatch";
@@ -23,8 +23,8 @@ a {
     justify-content: center;
 }
 .hero img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 .hero {
     margin: 10px;
