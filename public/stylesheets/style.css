@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Koverwatch";
+  src: url("/fonts/overwatch.woff2") format("woff2"), /* chrome firefox */
+       url("/fonts/overwatch.ttf") format("truetype"); /* chrome firefox opera Safari, Android, iOS 4.2+*/
+}
+
 body {
+  font-family: "Koverwatch";
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -27,6 +33,7 @@ a {
   flex: 0 1 auto;
   border: 2px solid transparent;
   cursor: pointer;
+  transition: 0.5s;
 }
 .hero:hover{
   border: 2px solid lightgreen;
@@ -42,6 +49,7 @@ a {
   padding:0;
   margin: 0;
   width: 100%!important;
+  background-color: cornflowerblue;
 }
 .role-grid{
   flex-grow: 1;
@@ -50,7 +58,27 @@ a {
   width: 100%;
   display: flex;
 }
+.role-title{
+  
+  display: flex;
+  justify-content: center;
+}
+.role-title label{
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  
+}
 .hero-grid-container{
   display: flex;
   height: auto;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.logo img{
+  width: 50%;
 }

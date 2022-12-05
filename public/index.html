@@ -8,20 +8,25 @@
 </head>
 
 <body class="ow-counters container">
-  <h1>Express</h1>
+  <div class="logo">
+    <img src="/images/Masthead_Overwatch2_Logo.png">
+  </div>
+  
   <div id="hero-grid-container" class="row hero-grid-container">
   </div>
 </body>
 
 <template id="hero-grid-template">
   <div class="col s4 role-grid">
-    <label>{{name}}</label>
+    <div class="role-title">
+      <label>{{name}}</label>
+    </div>
     <div class="hero-grid"></div>
   </div>
 </template>
 
 <template id="hero-template">
-  <div class="hero">
+  <div class="hero z-depth-2">
     <img src="{{image}}"></img>
   </div>
 </template>
