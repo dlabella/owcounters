@@ -1,8 +1,3 @@
-/* @font-face {
-    font-family: "Koverwatch";
-    src: url("/fonts/overwatch.woff2") format("woff2"),
-        /* chrome firefox */ url("/fonts/overwatch.ttf") format("truetype"); /* chrome firefox opera Safari, Android, iOS 4.2+*/
-} */
 
 body {
     font-family: "Koverwatch";
@@ -27,7 +22,7 @@ a {
     height: 65px;
 }
 .hero {
-    margin: 10px;
+    margin: 5px;
     border-radius: 8px;
     overflow: hidden;
     flex: 0 1 auto;
@@ -58,6 +53,7 @@ a {
     width: 100%;
     display: flex;
     padding: 0 !important;
+    justify-content: center;
 }
 .role-title {
     display: flex;
@@ -85,13 +81,37 @@ a {
 }
 .role-grid.tank{
   background-color: blueviolet;
-  width: 31%!important;
+  width: 31%;
 }
 .role-grid.damage{
   background-color: brown;
-  width: 38%!important;
+  width: 38%;
 }
 .role-grid.support{
   background-color: darkslateblue;
-  width: 31%!important;
+  width: 31%;
+}
+.hero-grid-container{
+  padding: 0!important;
+  margin: 0!important;
+  height: 100%;
+}
+@media only screen and (max-width: 768px){
+  .role-grid.tank{
+    width: 100%;
+  }
+  .role-grid.damage{
+    background-color: brown;
+    width: 100%;
+  }
+  .role-grid.support{
+    background-color: darkslateblue;
+    width: 100%;
+  }
+  .hero-grid-container{
+    flex-direction: column!important;
+  }
+  .logo{
+    padding: 10px;
+  }
 }
