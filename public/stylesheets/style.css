@@ -1,84 +1,94 @@
 @font-face {
-  font-family: "Koverwatch";
-  src: url("/fonts/overwatch.woff2") format("woff2"), /* chrome firefox */
-       url("/fonts/overwatch.ttf") format("truetype"); /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    font-family: "Koverwatch";
+    src: url("/fonts/overwatch.woff2") format("woff2"),
+        /* chrome firefox */ url("/fonts/overwatch.ttf") format("truetype"); /* chrome firefox opera Safari, Android, iOS 4.2+*/
 }
 
 body {
-  font-family: "Koverwatch";
-  padding: 50px;
+    font-family: "Koverwatch";
+    padding: 50px;
 }
 
 a {
-  color: #00B7FF;
+    color: #00b7ff;
 }
-#hero-grid-template{
-  display: none;
+#hero-grid-template {
+    display: none;
 }
-.hero-grid{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: center;
+.hero-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
 }
-.hero img{
-  width: 80px;
-  height: 80px;
+.hero img {
+    width: 80px;
+    height: 80px;
 }
-.hero{
-  margin: 10px;
-  border-radius: 8px;
-  overflow: hidden;
-  flex: 0 1 auto;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: 0.5s;
+.hero {
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 0 1 auto;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.hero:hover{
-  border: 2px solid lightgreen;
+.hero:hover {
+    border: 2px solid lightgreen;
 }
-.hero.selected{
-  border: 2px solid orange;
+.hero.selected {
+    border: 2px solid orange;
 }
-.hero.disabled{
-  opacity: 0.3;
-  pointer-events: none;
+.hero.disabled {
+    opacity: 0.3;
+    pointer-events: none;
 }
-.ow-counters{
-  padding:0;
-  margin: 0;
-  width: 100%!important;
-  background-color: cornflowerblue;
+.ow-counters {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    background-color: cornflowerblue;
 }
-.role-grid{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  display: flex;
+.role-grid {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 0 !important;
 }
-.role-title{
-  
-  display: flex;
-  justify-content: center;
+.role-title {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.3;
 }
-.role-title label{
-  font-size: 40px;
-  font-weight: 700;
-  color: white;
-  
+.role-title label {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
 }
-.hero-grid-container{
-  display: flex;
-  height: auto;
+.hero-grid-container {
+    display: flex;
+    height: auto;
 }
-.logo{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
+.logo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
-.logo img{
-  width: 50%;
+.logo img {
+    width: 50%;
+}
+.role-grid.tank{
+  background-color: blueviolet;
+}
+.role-grid.damage{
+  background-color: brown;
+}
+.role-grid.support{
+  background-color: darkslateblue;
 }

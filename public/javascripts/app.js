@@ -88,7 +88,12 @@
     function processTemplate(el, data) {
         var html = el.innerHTML;
         for (var key in data) {
-            html = html.replace("{{" + key + "}}", data[key]);
+            var keyData = "{{" + key + "}}";
+            html = html.replace(keyData, data[key]);
+            if (el.classList.contains(keyData)){
+                el.classList.remove(keyData)
+                el.classList.add(data[key].toLocaleLowerCase());
+            }
         }
         el.innerHTML = html;
     };
